@@ -8,11 +8,6 @@
          url('../font/junction-regular.woff') format('woff');
 }
 
-@font-face {
-    font-family: 'Roboto-Regular';
-    src: url(../font/Roboto-Regular.ttf) format('truetype');
-}
-
 /* Main Styles ------------------------- */
 
 * {
@@ -24,7 +19,7 @@ body {
     color: #ffffff9a;
     margin: 0;
     font-size: 1em;
-    font-family: roboto-regular, geneva;
+    font-family: 'Roboto', sans-serif;
 }
 
 main,
@@ -48,7 +43,7 @@ h1 {
     color: #4d9153;
     text-shadow: -1px 2px 3px #ffffff9a;
     font-size: 3em;
-    font-family: junction-regular, geneva;
+    font-family: 'junction-regular', geneva;
 }
 
 h2 {
