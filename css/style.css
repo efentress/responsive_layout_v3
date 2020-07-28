@@ -1,0 +1,323 @@
+/* Fonts ------------------------- */
+
+@font-face {
+    font-family: 'junction-regular';
+    src: url('../font/junction-regular.eot');
+    src: url('../font/junction-regular.eot?#iefix') format('embedded-opentype'),
+         url('../font/junction-regular.ttf') format('truetype'),
+         url('../font/junction-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../font/Roboto-Regular.ttf) format('truetype');
+}
+
+/* Main Styles ------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #242424;
+    color: #ffffff9a;
+    margin: 0;
+    font-size: 1em;
+    font-family: roboto-regular, geneva;
+}
+
+main,
+header {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+header {
+    border-bottom: solid dimgray 1px;
+    width: 95%;
+    margin-bottom: 30px;
+}
+
+main {
+    max-width: 1024px;
+}
+
+h1 {
+    color: #4d9153;
+    text-shadow: -1px 2px 3px #ffffff9a;
+    font-size: 3em;
+    font-family: junction-regular, geneva;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: junction-regular, geneva;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+.nav a {
+    display: block;
+    padding: 1em;
+    background-color: dimgray;
+    margin: 10px auto;
+    width: 95%;
+    text-transform: uppercase;
+    color: #ffffff9a;
+    text-decoration: none;
+}
+
+.nav li {
+    list-style: none;
+}
+
+footer {
+    border-top: solid dimgray 1px;
+    width: 95%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+footer nav {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    padding: 0;
+    margin: 30px auto;
+}
+
+/* Class Styles ------------------------- */
+
+.me {
+    box-shadow: 1px 1px 10px dimgray,
+        -1px -1px 10px dimgray,
+        -1px 1px 10px dimgray,
+        1px -1px 10px dimgray;
+    
+}
+
+#portfolio {
+    width: 95%;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.images {
+    width: 405px;
+}
+
+.wrapper {
+    background-color: #333333;
+    padding: 0 10px;
+    padding-bottom: 34px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.contact {
+    padding-top: 60px;
+    padding-bottom: 76px
+}
+
+.phone,
+.email {
+    display: block;
+    padding-top: 16px;
+}
+
+.name {
+    float: left;
+}
+
+.btt {
+    float: right;
+}
+
+/* Link Styles ------------------------- */
+
+a {
+    color: #ffffff9a;
+    text-decoration: none;
+}
+
+/* Media Queries ------------------------- */
+
+@media (min-width: 768px) {
+
+/* Main Styles ------------------------- */
+
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 0;
+        padding: .5em;
+    }
+
+    .nav li {
+        font-size: 1.5em;
+        list-style: none;
+        text-align: center;
+        display: inline;
+        margin: 0 16px;
+        
+    }
+
+    .nav a {
+        display: inline;
+        padding: 0;
+        width: 95%;
+        background-color: #242424;
+        text-transform: uppercase;
+        color: #ffffff9a;
+        text-decoration: none;
+    }
+
+    footer nav {
+        display: inline;
+        margin: 0;
+    }
+
+    footer .nav li {
+        font-size: 1.5em;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        font-size: 1em;
+        float: right;
+    }
+
+    footer .nav li .port {
+        margin-left: 16px;
+        margin-right: 32px;
+    }
+
+    footer .nav li .exp {
+        margin-left: 32px;
+        margin-right: 16px;
+    }
+
+    footer .nav a {
+        padding: 0;
+        width: 95%;
+        background-color: #242424;
+        text-transform: uppercase;
+        color: #ffffff9a;
+        text-decoration: none;
+    }
+    
+/* Class Styles ------------------------- */
+
+
+
+    .sec {
+        float: right;
+    }
+
+    .hi {
+        padding-right: 2em;
+        padding-top: 100px;
+    }
+
+    .me {
+        width: 50%;
+        margin-left: 32px;
+    }
+
+    .tab1,
+    .tab2,
+    .tab3 {
+        float: left;
+    }
+
+    #market,
+    #search,
+    #travel,
+    #map,
+    #photo,
+    #calc {
+        width: 50%;
+        padding: 0 1em;
+    }
+
+    .btt {
+        display: none;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    h1 {
+        float: left;
+    }
+
+   .nav li {
+       float: right;
+   }
+
+    nav a {
+        background-color: #242424;
+    }
+
+    nav li {
+        margin: 0 10px;
+        display: inline;
+    }
+
+    .nav {
+        padding: 16px;
+    }
+
+    .tab1,
+    .tab2,
+    .tab3 {
+        float: none;
+    }
+
+    .desk1,
+    .desk2 {
+        float: left;
+    }
+
+    #market,
+    #search,
+    #travel,
+    #map,
+    #photo,
+    #calc {
+        width: 33%;
+        padding: 0 1em;
+    }
+
+    footer .nav {
+        padding: 0;
+    }
+
+}
+
+
+
